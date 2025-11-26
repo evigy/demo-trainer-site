@@ -654,6 +654,35 @@ a {
    Responsive
    ======= */
 
+@media (max-width: 900px) {
+  .hero-content {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-card {
+    max-width: 440px;
+    margin-inline: auto;
+  }
+
+  .section-split .split-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .card-grid,
+  .services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cta-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 720px) {
   .container {
     width: min(100% - 1.75rem, 620px);
@@ -762,23 +791,7 @@ a {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  /* FIX: stack the three-image cluster nicely on mobile */
-  .split-gallery {
-    grid-template-columns: minmax(0, 1fr);
-    grid-template-rows: auto;
-  }
-
-  .gallery-large {
-    grid-row: auto;
-  }
-
-  .gallery-stack {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  /* Let images size themselves naturally instead of stretching */
+  /* tiny fix: avoid image overlap on narrow screens */
   .split-gallery img {
     height: auto;
   }

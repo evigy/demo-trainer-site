@@ -790,4 +790,9 @@ a {
   .footer-grid {
     grid-template-columns: minmax(0, 1fr);
   }
+
+  /* ONLY CHANGE: slightly bigger gap between stacked right images on mobile */
+  .gallery-stack {
+    gap: 1.4rem;
+  }
 }

@@ -790,4 +790,19 @@ a {
   .footer-grid {
     grid-template-columns: minmax(0, 1fr);
   }
+
+  /* NEW: stack the three-image cluster nicely on mobile */
+  .split-gallery {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto;
+  }
+
+  .gallery-large {
+    grid-row: auto;
+  }
+
+  .gallery-stack {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

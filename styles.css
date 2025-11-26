@@ -790,9 +790,4 @@ a {
   .footer-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-
-  /* tiny fix: avoid image overlap on narrow screens */
-  .split-gallery img {
-    height: auto;
-  }
 }
